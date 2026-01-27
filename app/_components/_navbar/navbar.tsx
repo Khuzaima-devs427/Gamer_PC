@@ -262,9 +262,11 @@ export default function Navbar() {
 
             {/* CTA Buttons */}
             <div className="hidden md:flex items-center space-x-4">
+              <Link href="/register">
               <button className="px-4 py-2 text-sm font-medium text-blue-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-colors">
                 Sign In
               </button>
+              </Link>
               <button className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors">
                 Get Started
               </button>

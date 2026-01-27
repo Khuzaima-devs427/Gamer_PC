@@ -2,6 +2,7 @@ import Navbar from '../../_components/_navbar/navbar';
 import BannerPage from '../_components/_banner_page/banner_page';
 import CategoryCards from '../_components/_category_cards/category_cards_page';
 import FeaturedPage from '../_components/_featured_page/featured_page';
+import FeaturedSale from '../_components/featured_sales/featured_sales';
 import Blogs from '../_components/_blogs/blogs';
 // import Announcement from '../../_components/_announcement/announcement_page';
 import { ShoppingBag, Star, Truck, Shield, Award, Clock } from "lucide-react";
@@ -16,8 +17,7 @@ export default function HomePage() {
       <BannerPage />
       <CategoryCards />
       <FeaturedPage />
-
-
+      <FeaturedSale />
       <Blogs />
       <main>
         {/* Hero Section */}
@@ -88,57 +88,57 @@ export default function HomePage() {
 
       </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center mb-4">
-                <ShoppingBag className="h-8 w-8 text-blue-400" />
-                <span className="text-2xl font-bold ml-2">Gaming PC</span>
-              </div>
-              <p className="text-gray-400">
-                Your destination for premium gaming PCs and electronics.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="/deals" className="hover:text-white">Today's Deals</a></li>
-                <li><a href="/bundles" className="hover:text-white">PC Bundles</a></li>
-                <li><a href="/products" className="hover:text-white">All Products</a></li>
-                <li><a href="/support" className="hover:text-white">Support</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">Categories</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="/gaming-pcs" className="hover:text-white">Gaming PCs</a></li>
-                <li><a href="/components" className="hover:text-white">Components</a></li>
-                <li><a href="/peripherals" className="hover:text-white">Peripherals</a></li>
-                <li><a href="/software" className="hover:text-white">Software</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">Newsletter</h4>
-              <p className="text-gray-400 mb-4">Get exclusive deals and updates</p>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="px-4 py-2 rounded-l-lg text-black grow bg-white focus:outline-none"
-                />
-                <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>© 2024 Gaming PC. All rights reserved.</p>
-          </div>
+     {/* Footer */}
+<footer className="bg-gray-900 text-white py-12">
+  <div className="container mx-auto px-4">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <div className="flex items-center mb-4">
+          <ShoppingBag className="h-8 w-8 text-blue-400" />
+          <span className="text-2xl font-bold ml-2">Gaming PC</span>
         </div>
-      </footer>
+        <p className="text-gray-400">
+          Your destination for premium gaming PCs and electronics.
+        </p>
+      </div>
+      <div>
+        <h4 className="font-bold mb-4">Quick Links</h4>
+        <ul className="space-y-2 text-gray-400">
+          <li><a href="/deals" className="hover:text-white">Today's Deals</a></li>
+          <li><a href="/bundles" className="hover:text-white">PC Bundles</a></li>
+          <li><a href="/products" className="hover:text-white">All Products</a></li>
+          <li><a href="/support" className="hover:text-white">Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 className="font-bold mb-4">Categories</h4>
+        <ul className="space-y-2 text-gray-400">
+          <li><a href="/gaming-pcs" className="hover:text-white">Gaming PCs</a></li>
+          <li><a href="/components" className="hover:text-white">Components</a></li>
+          <li><a href="/peripherals" className="hover:text-white">Peripherals</a></li>
+          <li><a href="/software" className="hover:text-white">Software</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 className="font-bold mb-4">Newsletter</h4>
+        <p className="text-gray-400 mb-4">Get exclusive deals and updates</p>
+        <div className="flex flex-col sm:flex-row">
+          <input
+            type="email"
+            placeholder="Your email"
+            className="px-4 py-3 sm:py-2 rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none text-black w-full bg-white focus:outline-none"
+          />
+          <button className="bg-blue-600 hover:bg-blue-700 px-4 py-3 sm:py-2 rounded-b-lg sm:rounded-r-lg sm:rounded-bl-none">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+    <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+      <p>© 2024 Gaming PC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
     </>
   );
 }
